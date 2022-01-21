@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            table, th, td {border: 1px solid black;
+            border-collapse: collapse;}
+            th, td {padding: 15px;}
+
+            table#Mesh tr:nth-child(even) {background-color: silver;}
+            table#Mesh tr:nth-child(odd) {background-color: tomato;}
+            table#Mesh th {background-color: black; color: white;}
+            table#Mesh {width: 100%; border-collapse: separate; border-spacing: 5px; 
+                border: 5px solid purple}
+            table#Mesh th{border: 5px solid blue;} 
+            table#Mesh td{border: 5px solid red;} 
+            table#Mesh tr:hover{background-color: cornsilk; color: blue;}
+
+            tr:hover {background-color: chocolate; color: yellow;}
+
+        </style>
+    </head>
+    <table style="width: 100%;">
+        <caption><b style="color: blue; font-family: Verdana;">My Group Scores</b></caption>
+        <tr>
+            <th>S/N</th><th>First Name</th><th colspan="2">Other Names</th><th>Score</th>
+        </tr>
+        <tr>
+            <td>1.</td><td>Meshach</td><td>Okonkwo</td><td>Ebuka</td><td>85.47</td>
+        </tr>
+        <tr>
+            <td>2.</td><td>Emmanuel</td><td>Opara</td><td>Junior</td><td>73.82</td>
+        </tr>
+        <tr>
+            <td>3.</td><td>Precious</td><td>Mmadubugwu</td><td>Amarachi</td><td>79.11</td>
+        </tr>
+        <tr>
+            <td rowspan="2">4.</td><td>Esther</td><td>Onyenoro</td><td>Onyedimma</td><td>71.22</td>
+        </tr>
+        <tr>
+            <td>Loveth</td><td>Okonkwo</td><td>Chinelo</td><td>71.22</td>
+        </tr>
+    </table>
+    <P>I used the colspan attribute to divide a column(Other Names) into two</P>
+    <p>I can divide the column further if I want to by replacing the value with the amount of column I want it to be.</p>
+    <p>Furthermore, if I want to divide the row, I would use the rowspan, like I did in (S/N) 4.</p>
+    <p>In the table below, am trying to design the same table above using the id attribute</p>
+
+    <table id="Mesh">
+        <caption><b style="color: red; font-family: Verdana;">My Group Scores</b></caption>
+    <tr>
+        <th>S/N</th><th>First Name</th><th colspan="2">Other Names</th><th>Score</th>
+    </tr>
+    <tr>
+        <td>1.</td><td>Meshach</td><td>Okonkwo</td><td>Ebuka</td><td>85.47</td>
+    </tr>
+    <tr>
+        <td>2.</td><td>Emmanuel</td><td>Opara</td><td>Junior</td><td>73.82</td>
+    </tr>
+    <tr>
+        <td>3.</td><td>Precious</td><td>Mmadubugwu</td><td>Amarachi</td><td>79.11</td>
+    </tr>
+    <tr>
+        <td rowspan="2">4.</td><td>Esther</td><td>Onyenoro</td><td>Onyedimma</td><td>71.22</td>
+    </tr>
+    <tr>
+        <td>Loveth</td><td>Okonkwo</td><td>Chinelo</td><td>71.22</td>
+    </tr>
+    </table>
+<p>Well I have succeeded in designing a wonderful table</p>
+<br>
+<p>The brightest students in my department are as follows</p>
+<ol type="1">
+    <li>Okereocha Njideka</li>
+    <li>Okorie Kennedy</li>
+    <li>Okonkwo Meshach</li>
+    <ol type="i">
+        <li>Meshoo VIP
+        </li>
+        <li>Humility the One the Only</li>
+    </ol>
+    <li>Nwapa Emmanuella</li>
+</ol>
+<p>Our reading manual consist of the following</p>
+<ul style="list-style-type: disc;">
+<li>Physical Chemistry</li>
+<li>Organic Chemistry</li>
+<li>Inorganic Chemistry</li>
+<li>Polyfunctional Compounds</li>
+<li>Petroleum and Petrochemicals</li>
+</ul>
+</html>
